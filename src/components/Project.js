@@ -32,7 +32,7 @@ export default function Project() {
               <h5 className="card-title">Sport News</h5>
               <p className="card-text">
                 This API based on project. You can see live Sports news. This project
-                is available in my GitHub account. use above link to see{" "}
+                is available in my GitHub account. use below link to see{" "}
               </p>
               <a href="https://github.com/Syedfahed/sportnews" className="btn btn-primary">
                 click
