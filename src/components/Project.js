@@ -14,7 +14,7 @@ export default function Project() {
             <div className="card-body">
               <h5 className="card-title">Text Edit</h5>
               <p className="card-text">
-                With Text Edit can you change uppercase to lowercase and count
+                With Text Edit you can change uppercase to lowercase and count
                 reading time
               </p>
               <a
@@ -31,8 +31,8 @@ export default function Project() {
             <div className="card-body">
               <h5 className="card-title">Sport News</h5>
               <p className="card-text">
-                This API base project. You can see live Sport news. This project
-                is available in my githug account. use above link to see{" "}
+                This API based on project. You can see live Sports news. This project
+                is available in my GitHub account. use above link to see{" "}
               </p>
               <a href="https://github.com/Syedfahed/sportnews" className="btn btn-primary">
                 click
@@ -45,8 +45,8 @@ export default function Project() {
             <div className="card-body">
               <h5 className="card-title">Todo List</h5>
               <p className="card-text">
-                By Entring any word you can add in list. by one click list will
-                underline. with double click delete
+                By Entring any words you can add in list. by one click list will
+                underline. with double click deleted
               </p>
               <a
                 href="https://todo-app-beta-wine.vercel.app/"
