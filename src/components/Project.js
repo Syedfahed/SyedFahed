@@ -32,7 +32,7 @@ export default function Project() {
               <h5 className="card-title">Sport News</h5>
               <p className="card-text">
                 This API base project. You can see live Sport news. This project
-                is available in my githug account. use above link to see{" "}
+                is available in my githug account. use above link
               </p>
               <a href="https://github.com/Syedfahed/sportnews" className="btn btn-primary">
                 click
@@ -93,14 +93,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div>
-      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy; syedfahed21@gmail.com</small>
-      <p>Developer--syed motesim fahed</p>
-    </div>
-  </footer>
-      </div>
+    
     </>
   );
 }

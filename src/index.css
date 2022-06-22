@@ -43,46 +43,6 @@ body{
 .name:hover{
   color: blue;
 }
-.about{
-  background-color: var(--White);
-  color: var(--Dark-Blue);
-  border : transparent;
-  color:white;
-  background-color: black;
-  text-decoration: none;
-}
-.about:hover{
-  background-color: var(--White);
-  color: var(--Dark-Blue);
-  border : transparent;
-  opacity: .8;
-  transform: scaleX(1.1);
-}
-.social-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.social-icons{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icons {
-  margin: 2rem;
-}
-.social-container ul li{
-  margin: 1rem;
-  border: solid 1px transparent;
-  border-radius: 1.5rem;
-}
-.social-container ul li:hover{
-  background-color: black;
-  color: white;
-} 
-
-
 
  /* connect */
 .card{
@@ -116,7 +76,7 @@ body{
   top:0;
   width:4px;
   height:100%;
-  background-color:#8E24AA;
+  background-color:black;
   transform:scaleY(0);
   transition:all 0.5s;
   transform-origin: bottom
@@ -140,7 +100,7 @@ body{
 
 .social-list li{
   padding:10px;
-  color:#8E24AA;
+  color:#c6c2c7;
   font-size:19px;
 }
 
@@ -149,7 +109,6 @@ body{
 
 .intro{
   margin-top: 5rem;
-  
   font-size: 1.8rem;
   text-align: center;
   vertical-align: middle;
@@ -162,35 +121,54 @@ body{
 .fa{
   margin: 2rem;
   font-size: 2rem;
- 
-}
-.fa:hover{
   border-radius: 0.5rem;
   width: 45%;
   height: 35%;
+ 
+}
+.fa-facebook:hover{
+ background-color: blue;
+ color: white;
+}
+.fa-instagram:hover{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.fa-linkedin:hover{
+  background-color: blue;
+  color: white;
+}
+.fa-github:hover{
   background-color: black;
   color: white;
 }
-.projectimg{
-  width: 20%;
-  height: 20%;
-}
-.card-project{
-  margin: 0.8rem;
-  width: 18rem;
-}
+
+/*  Project  */
 
 .item{
-  margin-top: 2rem;
- margin-left: 15rem;
-  width: 70%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
 }
 .poject-section{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20rem;
 }
+.card-project{
+  margin: 1rem;
+ width: 40%;
+ 
+}
+.About{
 
+ text-decoration: none;
+}
 
 
 
@@ -259,7 +237,7 @@ nav ul li a:hover::before{
   transform: scaleX(1);
 }
 .btn{
-  width: 100%;
+  width: 50%;
   background-color: black;
   color: white;
   
@@ -272,9 +250,7 @@ nav ul li a:hover::before{
   transform: scaleX(1.1);
 }
 @media screen and (max-width:832px){
-  .btn{
-      display: none;
-  }
+ 
   .humburgar{
       display: inline-block;
       position: absolute;
@@ -287,20 +263,18 @@ nav ul li a:hover::before{
   }
   .nav-ul{
       flex-direction: column;
-      width: 90%;
+      width: 70%;
       margin: 0 auto;
       padding: 1rem 0;
       margin-top: 4rem;
   
-      background-image: url(../src/image/outrun-vaporwave-hd-wallpaper-preview.jpg);
+     background-color: black;
       border: 1px solid rgb(85, 83, 79);
-      border-radius: .3rem;
+      border-radius: 1.3rem;
       transform: translate(-200%);
-      transition: all .5s;
+      transition: all .1s;
       z-index: 99;
   }
-
-
   .nav-ul li {
       padding: 1rem 0;
       font: 11.6rem;
@@ -311,17 +285,18 @@ nav ul li a:hover::before{
   }
 
   li a:hover {
-      color: rgb(0, 17, 255);
+      color: rgb(239, 238, 245);
   }
   nav ul li a:hover::before{
-      opacity: 0;
+      opacity: 1;
   }
   /*silid menue on click*/
 #toggle:checked ~ .nav-ul {
-  transform: translateY(1%);
+  transform: translateY(0%);
 }
 #toggle:checked ~ .humburgar{
-  border: 1px solid red;
+  background-color: white;
+  border: 1px solid ;
   border-radius: .3rem;
   padding: .4rem;
 }
@@ -363,4 +338,89 @@ nav ul li a:hover::before{
   width: 5%;
   height: 3rem;
   border-radius: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #F7F7F7;
+  }
+ .logo-sf{
+  display: inline-block;
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  width: 10%;
+  cursor: pointer;
+ }
+.fa{
+ 
+  color: black;
+}
+.fa-facebook:hover{
+  background-color: white;
+  color: blue;
+}
+.fa-instagram:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+   color: white;
+}
+.fa-linkedin:hover{
+  background-color: rgb(21, 21, 161);
+  color: white;
+}
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-project{
+  width: 100%;
+}
+.poject-section{
+  margin-right: 15rem;
+}
+.card-body{
+  width: 200%;
+}
+.card-img-top{
+  width: 150%;
+  margin-left: 2rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+.About{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.About:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
