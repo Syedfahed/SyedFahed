@@ -3,7 +3,11 @@ import Hm from "../image/icon-hamburger.svg"
 import { Link } from 'react-router-dom'
 import Logo from "../image/7730252.jpg"
 export default function Header() {
+    function uncheckbox(){
+       document.getElementById("toggle").checked = false;
+    }
   return (
+  
    <>
     <header>
         <div className="containner">
@@ -16,10 +20,10 @@ export default function Header() {
                 </label>
 
                 <ul className="nav-ul" id="nav-ul">
-                    <li className="nav-link"><Link to="/">Home</Link></li>
-                    <li className="nav-link"><Link to="/about">About</Link></li>
-                    <li className="nav-link"><Link to="/project">Project</Link></li>
-                    <li className="nav-link"><Link to="/connect">Connect</Link></li>
+                    <li onClick={uncheckbox} className="nav-link"><Link to="/">Home</Link></li>
+                    <li onClick={uncheckbox} className="nav-link"><Link to="/about">About</Link></li>
+                    <li onClick={uncheckbox} className="nav-link"><Link to="/project">Project</Link></li>
+                    <li onClick={uncheckbox} className="nav-link"><Link to="/connect">Connect</Link></li>
                 </ul>
             </nav>
         </div>

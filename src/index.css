@@ -381,7 +381,7 @@ nav ul li a:hover::before{
   width: 100%;
 }
 .poject-section{
-  margin-right: 15rem;
+  margin-right: 11rem;
 }
 .card-body{
   width: 200%;
@@ -389,6 +389,9 @@ nav ul li a:hover::before{
 .card-img-top{
   width: 150%;
   margin-left: 2rem;
+}
+.social-list li a i{
+ margin: 1rem;
 }
 
 
