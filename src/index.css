@@ -377,7 +377,7 @@ nav ul li a:hover::before{
 form{
   width: 50%;
   display: grid;
-  margin-left: 21rem;
+  margin:auto;
 }
 .form-btn{
   margin-top: 2rem;
