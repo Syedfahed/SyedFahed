@@ -234,8 +234,8 @@ nav ul li a:hover::before{
       padding: 1rem 0;
       margin-top: 4rem;
   
-     background-color: black;
-      border: 1px solid rgb(85, 83, 79);
+      background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+
       border-radius: 1.3rem;
       transform: translate(-200%);
       transition: all .1s;
@@ -246,15 +246,15 @@ nav ul li a:hover::before{
       font: 11.6rem;
   }
   li a {
-      color: white ;
+      color: var(--White) ;
       font-weight: 400;
   }
 
   li a:hover {
-      color: rgb(239, 238, 245);
+      color: black;
   }
   nav ul li a:hover::before{
-      opacity: 1;
+      opacity: 0;
   }
   /*silid menue on click*/
 #toggle:checked ~ .nav-ul {
@@ -389,10 +389,10 @@ form{
 margin:1rem  auto;
 }
 footer{
-  position:inherit;
+  position:relative;
   left: 0;
   bottom: 0;
-  width: 100%;
+  
   background-color: black;
   color: white;
   text-align: center

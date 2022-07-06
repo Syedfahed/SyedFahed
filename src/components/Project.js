@@ -4,21 +4,37 @@ import News from "../image/newpaper.png";
 import Todolist from "../image/todoslist.png";
 import Mybooklist from "../image/Mybooklist.png";
 import Other from "../image/syedpage.png";
+import passwordGenerator from "../image/password.png"
 export default function Project() {
   return (
     <>
       <div className="item">
         <div className="poject-section">
-          <div className="card-project">
-            <img className="card-img-top" src={Text} alt="Text" />
+        <div className="card-project">
+            <img className="card-img-top" src={passwordGenerator} alt="Text" />
             <div className="card-body">
-              <h5 className="card-title">Text Edit</h5>
+              <h5 className="card-title">Password Generator</h5>
               <p className="card-text">
-                With Text Edit you can change uppercase to lowercase and count
-                reading time
+                This project base on react Hooks and use to generator Password
               </p>
               <a
-                href="https://myapp-sable.vercel.app/"
+                href="https://password-generator-zeta-weld.vercel.app/"
+                className="btn btn-primary"
+              >
+                click
+              </a>
+            </div>
+          </div>
+          <div className="card-project">
+            <img className="card-img-top" src={Todolist} alt="Todo" />
+            <div className="card-body">
+              <h5 className="card-title">Todo List</h5>
+              <p className="card-text">
+                By Entring any word you can add in list. by one click list will
+                underline. with double click delete
+              </p>
+              <a
+                href="https://todo-app-beta-wine.vercel.app/"
                 className="btn btn-primary"
               >
                 click
@@ -31,25 +47,28 @@ export default function Project() {
             <div className="card-body">
               <h5 className="card-title">Sport News</h5>
               <p className="card-text">
-                This is API base project. You can see live Sport news. This project
-                is available in my github account. use below link to see{" "}
+                This is API base project. You can see live Sport news. This
+                project is available in my github account. use below link to see{" "}
               </p>
-              <a href="https://github.com/Syedfahed/sportnews" className="btn btn-primary">
+              <a
+                href="https://github.com/Syedfahed/sportnews"
+                className="btn btn-primary"
+              >
                 click
               </a>
             </div>
           </div>
 
           <div className="card-project">
-            <img className="card-img-top" src={Todolist} alt="Todo" />
+            <img className="card-img-top" src={Text} alt="Text" />
             <div className="card-body">
-              <h5 className="card-title">Todo List</h5>
+              <h5 className="card-title">Text Edit</h5>
               <p className="card-text">
-                By Entring any word you can add in list. by one click list will
-                underline. with double click delete
+                With Text Edit you can change uppercase to lowercase and count
+                reading time
               </p>
               <a
-                href="https://todo-app-beta-wine.vercel.app/"
+                href="https://myapp-sable.vercel.app/"
                 className="btn btn-primary"
               >
                 click
