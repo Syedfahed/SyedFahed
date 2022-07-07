@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import emailjs from "emailjs-com"
 export default function Email() {
     function sendEmail(e){
@@ -10,6 +10,7 @@ export default function Email() {
 
   return (
 <>
+
 <div className='container  email-box'>
     <h2 className='center'>Get In Touch</h2>
     <form className='form' onSubmit={sendEmail}>

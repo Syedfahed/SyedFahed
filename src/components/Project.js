@@ -11,7 +11,7 @@ export default function Project() {
       <div className="item">
         <div className="poject-section">
         <div className="card-project">
-            <img className="card-img-top" src={passwordGenerator} alt="Text" />
+            <img  className="card-img-top" src={passwordGenerator} alt="Text" />
             <div className="card-body">
               <h5 className="card-title">Password Generator</h5>
               <p className="card-text">
