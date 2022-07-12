@@ -3,8 +3,8 @@ import Text from "../image/Screenshot 2022-06-19 165432.png";
 import News from "../image/newpaper.png";
 import Todolist from "../image/todoslist.png";
 import Mybooklist from "../image/Mybooklist.png";
-import Other from "../image/syedpage.png";
 import passwordGenerator from "../image/password.png"
+import foodRecipe from "../image/foodRecipe.png"
 export default function Project() {
   return (
     <>
@@ -19,6 +19,22 @@ export default function Project() {
               </p>
               <a
                 href="https://password-generator-zeta-weld.vercel.app/"
+                className="btn btn-primary"
+              >
+                click
+              </a>
+            </div>
+          </div>
+          
+          <div className="card-project">
+            <img  className="card-img-top" src={foodRecipe} alt="Text" />
+            <div className="card-body">
+              <h5 className="card-title">Food-Recipe</h5>
+              <p className="card-text">
+                This project base on API and use to Food Recipe
+              </p>
+              <a
+                href="https://food-recipes-sooty.vercel.app/"
                 className="btn btn-primary"
               >
                 click
@@ -93,23 +109,7 @@ export default function Project() {
             </div>
           </div>
 
-          <div className="card-project">
-            <img className="card-img-top" src={Other} alt="syed" />
-            <div className="card-body">
-              <h5 className="card-title">Other page</h5>
-              <p className="card-text">
-                Base of javascript.. <br></br>
-                <br></br>
-                <br></br>
-              </p>
-              <a
-                href="https://demo-orpin-nine.vercel..app/"
-                className="btn btn-primary"
-              >
-                click
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
     </>
