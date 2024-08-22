@@ -31,7 +31,7 @@ const Education = () => {
       <div className="space-y-6">
         {educationData.map((edu) => (
           <div key={edu.id} className="education-entry bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-purple-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start ">
               <div className="flex-shrink-0 w-24 h-24 relative mb-4 lg:mb-0">
                 <img
                   src={edu.imageUrl}
@@ -40,7 +40,7 @@ const Education = () => {
                   className="rounded-full"
                 />
               </div>
-              <div className="flex-grow ml-4">
+              <div className="flex-grow ml-4 w-full">
                 <h3 className="text-xl font-bold">{edu.institution}</h3>
                 <p className="text-purple-400">{edu.degree}</p>
                 <p className="text-gray-400">{edu.date}</p>

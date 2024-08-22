@@ -57,7 +57,7 @@ const AboutMe = () => {
     };
   }, [titles]); // Depend on titles to prevent multiple intervals
   return (
-    <main id="about-section" className="pt-10 bg-gray-900 text-white">
+    <main id="about-section" className="pt-16 bg-gray-900 text-white">
       <section className="flex items-center justify-center">
         <div className="flex flex-col items-center">
           <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-purple-600">
@@ -68,7 +68,7 @@ const AboutMe = () => {
             />
           </div>
 
-          <div className="scroll-section text-center md:text-left md:pl-6 -mt-20">
+          <div className="scroll-section text-center md:pl-6 -mt-20 ">
             <h1 className="text-5xl font-bold">
               Hi, I am <br /> Syed Motesim Fahed
             </h1>
@@ -80,7 +80,7 @@ const AboutMe = () => {
               {currentTitle}
             </p>
             <p className="mt-4 max-w-6xl mx-4">
-              Hi, I'm Syed Motesim Fahed, a passionate Front-End Developer with
+              I'm Syed Motesim Fahed, a passionate Front-End Developer with
               a deep understanding of modern web technologies. With expertise in
               React.js, Next.js, Tailwind CSS, and Bootstrap, I specialize in
               creating dynamic and responsive user interfaces. I enjoy turning

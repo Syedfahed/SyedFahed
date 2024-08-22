@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -10,20 +10,61 @@ const Contact = () => {
     visible: false,
   });
 
-  const sendEmail = (e) => {
-    e.preventDefault(); // Prevent the form from submitting in the traditional way
-    // Get form data
-    const fromName = e.target.from_name.value.trim();
-    const fromEmail = e.target.from_email.value.trim();
-    const message = e.target.message.value.trim();
+  const [formErrors, setFormErrors] = useState({
+    fromName: "",
+    fromEmail: "",
+    message: "",
+  });
 
-    // Check if any field is empty
-    if (!fromName || !fromEmail || !message) {
-      alert("Please fill out all fields.");
-      return; // Stop the function if any field is empty
+  const [formValues, setFormValues] = useState({
+    fromName: "",
+    fromEmail: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    // Update form values
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+
+    // Validate fields
+    let errors = { ...formErrors };
+    switch (name) {
+      case "fromName":
+        errors.fromName = value.trim() === "" ? "Name is required" : "";
+        break;
+      case "fromEmail":
+        errors.fromEmail = value.trim() === "" ? "Email is required" : "";
+        break;
+      case "message":
+        errors.message = value.trim() === "" ? "Message is required" : "";
+        break;
+      default:
+        break;
+    }
+    setFormErrors(errors);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Validate all fields before submission
+    const errors = {
+      fromName: formValues.fromName.trim() === "" ? "Name is required" : "",
+      fromEmail: formValues.fromEmail.trim() === "" ? "Email is required" : "",
+      message: formValues.message.trim() === "" ? "Message is required" : "",
+    };
+
+    setFormErrors(errors);
+
+    if (Object.values(errors).some((error) => error !== "")) {
+      return; // Stop submission if there are errors
     }
 
-    // Proceed with sending the email if all fields are filled
     emailjs
       .sendForm(
         "service_d6rtipp",
@@ -36,7 +77,10 @@ const Contact = () => {
           setEmailStatus({ sent: true, failed: false, visible: true });
           setTimeout(
             () =>
-              setEmailStatus((prevState) => ({ ...prevState, visible: false })),
+              setEmailStatus((prevState) => ({
+                ...prevState,
+                visible: false,
+              })),
             3000
           );
         },
@@ -44,7 +88,10 @@ const Contact = () => {
           setEmailStatus({ sent: false, failed: true, visible: true });
           setTimeout(
             () =>
-              setEmailStatus((prevState) => ({ ...prevState, visible: false })),
+              setEmailStatus((prevState) => ({
+                ...prevState,
+                visible: false,
+              })),
             3000
           );
         }
@@ -93,10 +140,18 @@ const Contact = () => {
               <input
                 type="text"
                 id="from_name"
-                name="from_name"
+                name="fromName"
                 style={{ height: "36px" }}
+                placeholder="Name"
                 className="w-full pl-2 rounded-md border-transparent bg-blue-800 focus:border-purple-500 focus:ring-0"
+                value={formValues.fromName}
+                onChange={handleChange}
               />
+              {formErrors.fromName && (
+                <p className="text-[12px] mt-2 text-red-600">
+                  {formErrors.fromName}
+                </p>
+              )}
             </div>
             <div>
               <label htmlFor="from_email" className="block mb-1">
@@ -105,10 +160,18 @@ const Contact = () => {
               <input
                 type="email"
                 id="from_email"
-                name="from_email"
+                name="fromEmail"
+                placeholder="Email"
                 style={{ height: "36px" }}
                 className="pl-2 w-full bg-blue-800 rounded-md border-transparent focus:border-purple-500 focus:ring-0"
+                value={formValues.fromEmail}
+                onChange={handleChange}
               />
+              {formErrors.fromEmail && (
+                <p className="text-[12px] mt-2 text-red-600">
+                  {formErrors.fromEmail}
+                </p>
+              )}
             </div>
             <div>
               <label htmlFor="message" className="block mb-1">
@@ -118,8 +181,14 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows={4}
+                placeholder="Message"
                 className="pl-2 w-full rounded-md bg-blue-800 border-transparent focus:border-purple-500 focus:ring-0"
+                value={formValues.message}
+                onChange={handleChange}
               ></textarea>
+              {formErrors.message && (
+                <p className="text-[12px] text-red-600">{formErrors.message}</p>
+              )}
             </div>
             <button
               type="submit"
@@ -132,7 +201,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <style  jsx="true" >{`
+      <style jsx="true">{`
         #contact {
           scroll-margin-top: 50px; /* Adjust  */
         }
