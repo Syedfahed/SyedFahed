@@ -114,7 +114,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-      <style jsx>{`
+      <style  jsx="true" >{`
         .scroll-section::before {
           content: "";
           display: block;

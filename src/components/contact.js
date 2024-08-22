@@ -132,7 +132,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style  jsx="true" >{`
         #contact {
           scroll-margin-top: 50px; /* Adjust  */
         }

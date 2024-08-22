@@ -36,8 +36,7 @@ const Education = () => {
                 <img
                   src={edu.imageUrl}
                   alt={`${edu.institution} logo`}
-                  layout="fill"
-                  objectFit="contain"
+                
                   className="rounded-full"
                 />
               </div>
@@ -52,7 +51,7 @@ const Education = () => {
         ))}
       </div>
       
-      <style jsx>{`
+      <style  jsx="true" >{`
         #education {
           scroll-margin-top: 50px; /* Adjust this value as needed */
         }

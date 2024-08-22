@@ -50,9 +50,7 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
         <p className="text-center mb-12">
-          I have worked on this Full-Stack, Block-Chain, AI projects. The
-          Dev-Ops & Cloud Blogs are on My-Blogs-on-Tech. Here are some of my
-          projects.
+        {/* dec */}
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
@@ -99,7 +97,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style  jsx="true" >{`
         #projects {
           scroll-margin-top: 34px; /* Adjust this value as needed */
         }

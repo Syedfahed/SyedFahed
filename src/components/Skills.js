@@ -413,7 +413,7 @@ const Skills = () => {
           </div>
         </div> */}
       </div>
-      <style jsx>{`
+      <style  jsx="true" >{`
         #skills {
           scroll-margin-top: 78px; /* Adjust this value as needed */
         }

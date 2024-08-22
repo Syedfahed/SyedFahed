@@ -57,7 +57,7 @@ const Experience = () => {
         Below is a summary of my professional experience, highlighting my roles
         and contributions to each organization.
       </p>
-      <div className="space-y-6">
+      <div className="space-y-12">
         {experienceData.map((exp) => (
           <div
             key={exp.id}
@@ -68,8 +68,7 @@ const Experience = () => {
                 <img
                   src={exp.imageUrl}
                   alt={`${exp.company} logo`}
-                  layout="fill"
-                  objectFit="contain"
+                
                   className="rounded-full"
                 />
               </div>
@@ -113,7 +112,7 @@ const Experience = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style  jsx="true" >{`
         #experience {
           scroll-margin-top: 50px; /* Adjust this value as needed */
         }
