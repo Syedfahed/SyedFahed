@@ -52,7 +52,7 @@ const Projects = () => {
         <p className="text-center mb-12">
         {/* dec */}
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 gap-8">
           {projectsData.map((project, index) => (
             <div key={index} className="bg-gray-800 rounded-lg p-6">
               <img
