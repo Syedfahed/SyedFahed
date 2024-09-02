@@ -1,6 +1,21 @@
 // Projects.tsx
 const projectsData = [
   {
+    name: "MERN Stack Blog Application",
+    description: " This project base on Bolg post you can create blog and login and signup as a user",
+    tech: [
+      "Reactjs",
+      "Nodejs",
+      "MongoDB",
+      "react-hook-form",
+      "Yup Validation",
+      "Tailwind CSS",
+    ],
+    image: "/images/blog-post.png", // Replace with the actual image path
+    liveUrl: "https://blog-seven-lake-58.vercel.app/", // Replace with the actual Google Drive link
+    codeUrl: "https://github.com/Syedfahed/blog-backend", // Replace with the actual GitHub repo
+  },
+  {
     name: "Splitter (TypeScript)",
     description: " This project base on Room Maintenance",
     tech: [

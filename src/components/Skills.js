@@ -29,7 +29,7 @@ const Skills = () => {
       className="target-section bg-gray-900 text-white py-10 px-4"
     >
       <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-start gap-20">
         <div className="skills-container">
           <h3 className="text-2xl font-bold mb-6">Frontend</h3>
           <div className="grid grid-cols-3 gap-4">
@@ -44,7 +44,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/redux.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
               <p>Redux</p>
@@ -53,15 +53,15 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/Ts.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
-              <p>TypeScript</p>
+              <p>logo</p>
             </div>
             {/* <div className="skill-icon">
               <img
                 src="/images/Ajax.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
               <p>AJAX</p>
@@ -70,7 +70,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/Next.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
               <p>Next.js</p>
@@ -146,7 +146,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/webpack.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
               <p>WebPack</p>
@@ -154,7 +154,7 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* <div className="skills-container">
+        <div className="skills-container">
           <h3 className="text-2xl font-bold mb-6">Backend</h3>
           <div className="grid grid-cols-3 gap-4">
             <div className="skill-icon">
@@ -166,23 +166,6 @@ const Skills = () => {
               <p>Node.js</p>
             </div>
             <div className="skill-icon">
-              <img
-                src="/images/Asp.png"
-                alt="TypeScript"
-                style={{ width: "60px", height: "60px" }}
-              />
-              <p>ASP.NET</p>
-            </div>
-
-            <div className="skill-icon">
-              <FontAwesomeIcon
-                icon={faPython}
-                size="4x"
-                style={{ color: "#3776AB" }}
-              />
-              <p>Python</p>
-            </div>
-            <div className="skill-icon">
               <FontAwesomeIcon
                 icon={faNpm}
                 size="4x"
@@ -192,96 +175,33 @@ const Skills = () => {
             </div>
 
             <div className="skill-icon">
-              <FontAwesomeIcon
-                icon={faPhp}
-                size="4x"
-                style={{ color: "#474A8A" }}
-              />
-              <p>PHP</p>
-            </div>
-
-            <div className="skill-icon">
-              <img
-                src="/images/java.png"
-                alt="TypeScript"
-                style={{ width: "60px", height: "60px" }}
-              />
-              <p>Java</p>
-            </div>
-
-            <div className="skill-icon">
-              <img
-                src="/images/go.png"
-                alt="TypeScript"
-                style={{ width: "60px", height: "60px" }}
-              />
-              <p>Go</p>
-            </div>
-
-            <div className="skill-icon">
-              <img
-                src="/images/rubyonrails.png"
-                alt="TypeScript"
-                style={{ width: "60px", height: "60px" }}
-              />
-              <p>Ruby on Rails</p>
-            </div>
-
-            <div className="skill-icon">
               <img
                 src="/images/bitbucket.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "60px", height: "60px" }}
               />
               <p>Bit-Bucket</p>
             </div>
 
-            <div className="skill-icon">
-              <img
-                src="/images/postgre.png"
-                alt="TypeScript"
-                style={{ width: "60px", height: "60px" }}
-              />
-              <p>PostgreSQL</p>
-            </div>
-
-            <div className="skill-icon">
-              <img
-                src="/images/sequelize.png"
-                alt="TypeScript"
-                style={{ width: "64px", height: "64px" }}
-              />
-              <p>Sequelize</p>
-            </div>
 
             <div className="skill-icon">
               <img
                 src="/images/sql.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>SQL</p>
             </div>
-
-            <div className="skill-icon">
-              <img
-                src="/images/Wcf.png"
-                alt="TypeScript"
-                style={{ width: "64px", height: "64px" }}
-              />
-              <p>WCF</p>
-            </div>
-
             <div className="skill-icon">
               <img
                 src="/images/Mongo.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Mongodb</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* Devops skills */}
         {/* <div className="skills-container">
@@ -333,7 +253,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/kubernetes.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Kubernetes</p>
@@ -360,7 +280,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/azure.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Azure</p>
@@ -369,7 +289,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/Bash.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Bash-Script</p>
@@ -378,7 +298,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/ansible.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Ansible</p>
@@ -387,7 +307,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/terraform.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Terraform</p>
@@ -396,7 +316,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/promethus.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Promethus</p>
@@ -405,7 +325,7 @@ const Skills = () => {
             <div className="skill-icon">
               <img
                 src="/images/grafana.png"
-                alt="TypeScript"
+                alt="logo"
                 style={{ width: "64px", height: "64px" }}
               />
               <p>Grafana</p>
@@ -413,7 +333,7 @@ const Skills = () => {
           </div>
         </div> */}
       </div>
-      <style  jsx="true" >{`
+      <style jsx="true">{`
         #skills {
           scroll-margin-top: 78px; /* Adjust this value as needed */
         }
