@@ -10,7 +10,7 @@
 - 💡 I love working on **React.js / Next.js projects with Tailwind CSS, TypeScript, Node.js, and MongoDB**
 - 🎯 Long-term goal: **Full-Stack Developer**
 - 🎨 I enjoy building **AI tools, educational platforms, and creative web apps**
-- ⚡ Fun fact: I’m an anime fan — Light Yagami is my favorite character!
+- ⚡ Fun fact: I’m an anime fan
 
 ---
 
